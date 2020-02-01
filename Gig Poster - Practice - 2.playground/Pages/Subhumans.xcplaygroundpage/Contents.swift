@@ -31,6 +31,7 @@ let yellow = Color(hue: 45, saturation: 99, brightness: 100, alpha: 100)
 let purple = Color(hue: 304, saturation: 40, brightness: 64, alpha: 100)
 let brown = Color(hue: 38, saturation: 99, brightness: 38, alpha: 100)
 let lightRed = Color(hue: 10, saturation: 80, brightness: 80, alpha: 75)
+let black = Color(hue: 0, saturation: 0, brightness: 0, alpha: 75)
 
 
 // background
@@ -40,15 +41,102 @@ canvas.drawEllipse(at: Point(x:200, y:300), width: 600, height: 800)
 //
 // Begin your solution here...
 // Make a list (array) of vertices
+
 var polygonVertices: [Point] = [] // emty list of Point objects
-polygonVertices.append(Point(x: 25, y: 225))
-polygonVertices.append(Point(x: 75, y: 325))
-polygonVertices.append(Point(x: 225, y: 325))
-polygonVertices.append(Point(x: 175, y: 225))
+polygonVertices.append(Point(x: 10, y: 225))
+polygonVertices.append(Point(x: 60, y: 325))
+polygonVertices.append(Point(x: 0, y: 325))
+polygonVertices.append(Point(x: 0, y: 225))
+
+var polygonVertices1: [Point] = [] // emty list of Point objects
+polygonVertices1.append(Point(x: 20, y: 225))
+polygonVertices1.append(Point(x: 70, y: 325))
+polygonVertices1.append(Point(x: 220, y: 325))
+polygonVertices1.append(Point(x: 170, y: 225))
+
+var polygonVertices2: [Point] = [] // emty list of Point objects
+polygonVertices2.append(Point(x: 180, y: 225))
+polygonVertices2.append(Point(x: 230, y: 325))
+polygonVertices2.append(Point(x: 380, y: 325))
+polygonVertices2.append(Point(x: 330, y: 225))
+
+var polygonVertices3: [Point] = [] // emty list of Point objects
+polygonVertices3.append(Point(x: 340, y: 225))
+polygonVertices3.append(Point(x: 390, y: 325))
+polygonVertices3.append(Point(x: 400, y: 325))
+polygonVertices3.append(Point(x: 400, y: 225))
+
+var polygonVertices4: [Point] = [] // emty list of Point objects
+polygonVertices4.append(Point(x: 10, y: 50))
+polygonVertices4.append(Point(x: 60, y: 150))
+polygonVertices4.append(Point(x: 0, y: 150))
+polygonVertices4.append(Point(x: 0, y: 50))
+
+
+var polygonVertices5: [Point] = [] // emty list of Point objects
+polygonVertices5.append(Point(x: 20, y: 50))
+polygonVertices5.append(Point(x: 70, y: 150))
+polygonVertices5.append(Point(x: 210, y: 150))
+polygonVertices5.append(Point(x: 170, y: 50))
+
+var polygonVertices6: [Point] = [] // emty list of Point objects
+polygonVertices6.append(Point(x: 180, y: 50))
+polygonVertices6.append(Point(x: 220, y: 150))
+polygonVertices6.append(Point(x: 380, y: 150))
+polygonVertices6.append(Point(x: 330, y: 50))
+
+var polygonVertices7: [Point] = [] // emty list of Point objects
+polygonVertices7.append(Point(x: 340, y: 50))
+polygonVertices7.append(Point(x: 390, y: 150))
+polygonVertices7.append(Point(x: 400, y: 150))
+polygonVertices7.append(Point(x: 400, y: 50))
+
+
+var polygonVertices8: [Point] = [] // emty list of Point objects
+polygonVertices8.append(Point(x: 10, y: 140))
+polygonVertices8.append(Point(x: 60, y: 235))
+polygonVertices8.append(Point(x: 0, y: 235))
+polygonVertices8.append(Point(x: 0, y: 140))
+
+var polygonVertices9: [Point] = [] // emty list of Point objects
+polygonVertices9.append(Point(x: 20, y: 140))
+polygonVertices9.append(Point(x: 70, y: 235))
+polygonVertices9.append(Point(x: 215, y: 235))
+polygonVertices9.append(Point(x: 170, y: 140))
+
+var polygonVertices10: [Point] = [] // emty list of Point objects
+polygonVertices9.append(Point(x: 180, y: 140))
+polygonVertices9.append(Point(x: 225, y: 235))
+polygonVertices9.append(Point(x: 370, y: 235))
+polygonVertices9.append(Point(x: 325, y: 140))
+
+var polygonVertices11: [Point] = [] // emty list of Point objects
+polygonVertices9.append(Point(x: 340, y: 140))
+polygonVertices9.append(Point(x: 380, y: 235))
+polygonVertices9.append(Point(x: 400, y: 235))
+polygonVertices9.append(Point(x: 400, y: 140))
 
 
 
+// Color of the shapes
+canvas.fillColor = brown
 canvas.drawCustomShape(with: polygonVertices)
+canvas.drawCustomShape(with: polygonVertices2)
+canvas.drawCustomShape(with: polygonVertices4)
+canvas.drawCustomShape(with: polygonVertices6)
+
+canvas.fillColor = purple
+canvas.drawCustomShape(with: polygonVertices1)
+canvas.drawCustomShape(with: polygonVertices3)
+canvas.drawCustomShape(with: polygonVertices5)
+canvas.drawCustomShape(with: polygonVertices7)
+
+
+canvas.fillColor = lightRed
+canvas.drawCustomShape(with: polygonVertices8)
+canvas.drawCustomShape(with: polygonVertices9)
+canvas.drawCustomShape(with: polygonVertices10)
+canvas.drawCustomShape(with: polygonVertices11)
 
 
 // Last, draw a grid for reference
