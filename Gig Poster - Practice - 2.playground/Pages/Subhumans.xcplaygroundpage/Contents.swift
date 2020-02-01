@@ -32,7 +32,40 @@ let purple = Color(hue: 304, saturation: 40, brightness: 64, alpha: 100)
 let brown = Color(hue: 38, saturation: 99, brightness: 38, alpha: 100)
 let lightRed = Color(hue: 10, saturation: 80, brightness: 80, alpha: 75)
 
+
+// background
+canvas.fillColor = yellow
+canvas.drawEllipse(at: Point(x:200, y:300), width: 600, height: 800)
+
+//
 // Begin your solution here...
+// Make a list (array) of vertices
+var polygonVertices: [Point] = [] // emty list of Point objects
+polygonVertices.append(Point(x: 25, y: 225))
+polygonVertices.append(Point(x: 75, y: 325))
+polygonVertices.append(Point(x: 225, y: 325))
+polygonVertices.append(Point(x: 175, y: 225))
+
+
+
+canvas.drawCustomShape(with: polygonVertices)
+
+
+// Last, draw a grid for reference
+
+//Horizontal line
+for y in stride(from: 0, through: 600, by: 50) {
+
+    //Draw lines
+    canvas.drawLine(from: Point(x: 0, y: y), to: Point(x: 400, y: y))
+}
+    
+    //Vertical line
+for x in stride(from: 0, through: 400, by: 50) {
+    x
+    //Draw lines
+    canvas.drawLine(from: Point(x: x, y: 0), to: Point(x: x, y: 600))
+}
 
 
 /*:
